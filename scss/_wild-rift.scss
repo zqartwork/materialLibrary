@@ -1,0 +1,188 @@
+/*
+-----------
+Color Asset
+-----------
+*/
+
+//primary blue
+$electricBlue: #32C8FF;
+$royalBlue: #2858F0;
+
+//iris
+$iris1: #6E87FF;
+$iris2: #551ED7;
+
+//ruby
+$ruby1: #ff5f5f;
+$ruby2: #9B1950;
+
+//fire
+$fire1: #FFA523;
+$fire2: #dc500f;
+
+//violet
+$violet1: #e65ffa;
+$violet2: #820fbe;
+
+//aqua
+$aqua1: #32dcd2;
+$aqua2: #0a91b4;
+
+//lime
+$lime1: #c8e128;
+$lime2: #64aa19;
+
+//amber
+$amber1: #ffd20d;
+$amber2: #cd7800;
+
+/*
+------------
+Extend Asset
+------------
+*/
+%clipBig {
+    clip-path: polygon(0 0,100% 0,100% calc(100% - 6rem),calc(100% - 6.5rem) 100%,0 100%);
+}
+%clipR {
+    clip-path: polygon(0 0,calc(100% - 3rem) 0,100% 100%,100% 100%,0 100%);
+}
+
+/*
+-----------
+Deco Brick
+-----------
+*/
+.deco-wrap {
+    display: inline-flex;
+    margin-right: 2rem;
+}
+.deco-bar {
+    position: absolute;
+    bottom: -.3rem;
+    left: 0;
+    height: .3rem;
+    width: 100%;
+
+    background-color: $electricBlue;
+}
+.vt .deco-bar {
+    bottom: unset;
+    top: -.3rem;
+}
+.deco-brick {
+    position: absolute;
+    bottom: -1rem;
+    left: 0;
+    height: 1rem;
+    width: 5rem;
+
+    background-color: $electricBlue;
+
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: 0rem;
+        left: 5rem;
+
+        border-right: 1rem solid $trans;
+        border-top: 1rem solid $electricBlue;
+    }
+}
+
+.vt .deco-brick {
+    bottom: unset;
+    top: -1rem;
+    left: 0;
+
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: 0rem;
+        left: 4rem;
+
+        border-right: 1rem solid $trans;
+        border-top: 1rem solid $trans;
+        border-left: 1rem solid $trans;
+        border-bottom: 1rem solid $electricBlue;
+    }
+}
+
+.clip-wrapper {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $electricBlue;
+    color: $white;
+
+    height: 20rem;
+    width: 20rem;
+
+    margin-right: 2rem;
+
+    @extend %clipBig;
+
+    &.R {
+        height: 5rem;
+        @extend %clipR
+    }
+}
+
+.caption-underline {
+    background-color: $trans;
+    width: 50rem;
+    .demo-brick {
+        background-color: $white;
+    }
+    .deco-bar {
+        width: calc(100% - 6.1rem);
+    }
+    .deco-rec {
+        position: absolute;
+        z-index: -1;
+        right: 3rem;
+        bottom: -.3rem;
+        height: 6rem;
+        width: 1rem;
+        transform: skewX(-47deg);
+
+        background-color: $electricBlue;
+    }
+}
+.sp-input-wrapper {
+    width: 520px;
+    height: 100%;
+}
+.sp-input {
+    width: 100%;
+    height: 0;
+    padding-top: calc((62/520)*100%);
+}
+
+.input-frame {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/input-frame.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    z-index: 0;
+}
+
+input {
+    position: absolute;
+    top: 0;
+    left: 3rem;
+    height: 100%;
+    width: calc(100% - 6rem);
+
+    display: inline-flex;
+    color: $electricBlue;
+    z-index: 1;
+    font-size: 1.6rem;
+
+    background-color: $trans;
+}
