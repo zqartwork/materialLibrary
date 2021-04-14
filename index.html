@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Material Library</title>
+    <!--google plus info-->
+    <meta itemprop="name" content="{網頁標題}">
+    <meta itemprop="image" content="[網頁縮圖_1200x628]">
+    <meta name="description" content="{網頁內容敘述}" />
+    <!--FB info-->
+    <meta property="og:title" content="{網頁標題}" />
+    <meta property="og:site_name" content="[網站名稱]" />
+    <meta property="og:url" content="[網頁網址_URL]">
+    <meta property="og:image" content="[網頁縮圖_1200x628]">
+    <meta property="og:description" content="{網頁內容敘述}">
+    <meta property="og:type" content="website" />
+    <!--Favicon-->
+    <link rel="icon" href="[favicon.ico]" type="image/x-icon" />
+    <!--CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <!-- wow animate -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <!-- owl-default-theme -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <!-- main-style -->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div id="app">
+        <div class="wrapper">
+            <div id="gt" class="scrollTop">
+                <i class="fas fa-chevron-up"></i>
+            </div>
+            <nav id="navbar">
+                <div class="nav-wrap">
+                    <a href="index.html" class="logo"><span>ML</span></a>
+                    <div class="nav-item-wrap">
+                        <a href="https://github.com/zqartwork" class="nav-item">GitHub</a>
+                    </div>
+                </div>
+            </nav>
+            <nav class="side-menu">
+                <div class="side-nav-wrap">
+                    <div class="side-nav-item-wrap">
+                        <a href="#sectionName1" class="side-nav-item anchor" data-scroll="sectionName1">sectionName1</a>
+                        <a href="#sectionName2" class="side-nav-item anchor" data-scroll="sectionName2">sectionName2</a>
+                        <a href="#sectionName3" class="side-nav-item anchor" data-scroll="sectionName3">sectionName3</a>
+                        <a href="#sectionName4" class="side-nav-item anchor" data-scroll="sectionName4">sectionName4</a>
+                        <a href="#sectionName5" class="side-nav-item anchor" data-scroll="sectionName5">sectionName5</a>
+                    </div>
+                </div>
+            </nav>
+            <main>
+                <section id="sectionName1">
+                    <div class="container">
+                        <div class="inner-wrapper">
+                            <div class="section-title">Custom Select</div>
+                            <div class="section-content">
+                                <!-- Custom Select 短 -->
+                                <div class="custom_select">
+                                    <div class="select_title">
+                                        <div class="">
+                                            <span class="selected">請選擇內容 ( 短 ) </span>
+                                            <!-- Arrow Style -->
+                                            <i class="fas fa-caret-right select_i"></i>
+                                        </div>
+                                    </div>
+                                    <input type="hidden" name="date" id="data_input">
+                                    <ul class="select_menu">
+                                        <li content="">選項</li>
+                                        <li content="">選項</li>
+                                        <li content="">選項</li>
+                                    </ul>
+                                </div>
+                                <!-- Custom Select -->
+                                <!-- Custom Select 長-->
+                                <div class="custom_select">
+                                    <div class="select_title">
+                                        <div class="">
+                                            <span class="selected">請選擇內容 ( 長 ) </span>
+                                            <!-- Arrow Style -->
+                                            <i class="fas fa-caret-right select_i"></i>
+                                        </div>
+                                    </div>
+                                    <input type="hidden" name="date" id="data_input">
+                                    <ul class="select_menu">
+                                        <li content="">選項</li>
+                                        <li content="">選項</li>
+                                        <li content="">選項</li>
+                                        <li content="">選項</li>
+                                        <li content="">選項</li>
+                                        <li content="">選項</li>
+                                        <li content="">選項</li>
+                                        <li content="">選項</li>
+                                        <li content="">選項</li>
+                                    </ul>
+                                </div>
+                                <!-- Custom Select -->
+                            </div>
+                        </div>
+                        <div class="inner-wrapper">
+                            <div class="section-title">Custom Uploader</div>
+                            <div class="section-content">
+                                <div class="custom_upload">
+                                    <div class="input-file-container">  
+                                        <input class="input-file" id="my-file" type="file">
+                                        <label tabindex="0" for="my-file" class="input-file-trigger">上傳檔案</label>
+                                    </div>
+                                    <span class="file-return"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="inner-wrapper">
+                            <div class="section-title">Modal Opener</div>
+                            <div class="section-content">
+                                <a href="#!" class="primary-btn modal-opener" tt-to="modalName"><span>打開彈窗</span></a>
+                            </div>
+                        </div>
+                        <div class="inner-wrapper">
+                            <div class="section-title">Switch Tabs</div>
+                            <div class="section-content">
+                                <div class="switch-nav-tab-wrapper">
+                                    <a href="#!" class="switch-nav-tab switcher active" tab="#tabA"><span>頁籤一</span></a>
+                                    <a href="#!" class="switch-nav-tab switcher" tab="#tabB"><span>頁籤二</span></a>
+                                    <a href="#!" class="switch-nav-tab switcher" tab="#tabC"><span>頁籤三</span></a>
+                                </div>
+                                <div class="switch-nav-content-wrapper">
+                                    <div class="switch-nav-content active" id="tabA">
+                                        <p>
+                                            數除保刻主位實們年中爸安，出只就地以說成火它過氣動臺來片要對師！氣沒係著己、英求她時的牛。
+                                            多石我著果錯候我……手學點不向劇教少其寫亞海結通件性車良於、製素作格張。
+                                            不熱居；家止可，還紀據熱他就？被電陸義場，公空住是提，高行不年道對法子友一功爭之，商蘭人的識家預子，有親兩難，是都美布世上之不管能起元法岸錯，不失叫難業續性無著前禮然。
+                                        </p>
+                                    </div>
+                                    <div class="switch-nav-content" id="tabB">
+                                        <p>
+                                            把角男，做色是常準；今賽意金口量，投進裡區的來對落算。會怎張臺；康十親臺不，設市型沒度象又沒？
+                                            哥局上來供言縣個導眼因過望友經當文情工新的算來離及內運仍很和冷難教，
+                                            加量要木石線兩國國模童你世！學白值令百起路中上卻星步她一事也童結。打完清說樂些德嚴感們，
+                                            方兒沒河了的舉者日望美。重我信。小你利業樂運底車有業內集天生原地國過相重在變下？
+                                            美女片向又年，晚人人境見自親野西克發腦臺……而快光從來了可地利要評光千燈參那經可，
+                                            兩灣量可市。
+                                        </p>
+                                    </div>
+                                    <div class="switch-nav-content" id="tabC">
+                                        <p>
+                                            利慢世部此要字，一操大的他一獲其來政形就格；不馬人們立我的情沒色張具、讓並列在家……夫唱位才我親事。
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="sectionName2">B</section>
+                <section id="sectionName3">C</section>
+                <section id="sectionName4">D</section>
+                <section id="sectionName5">E</section>
+            </main>
+            <footer></footer>
+            <div class="modal modalName">
+                <div class="modal-container">
+                    <div class="modal-closer modal-mask"></div>
+                    <div class="modal-panel">
+                        <a href="#!" class="modal-closer modal-close-btn">
+                            <img src="img/closer.svg" alt="">
+                        </a>
+                        <div class="modal-wrap">
+                            <div class="modal-header">
+                                <div class="modal-title">彈窗標題</div>
+                                <div class="modal-subtitle">彈窗副標題 - 一些簡述</div>
+                            </div>
+                            <div class="divi-wide"></div>
+                            <div class="modal-body">
+                                <p>
+                                    子親他金式對？歡近中色，朋一失，氣物度外成話平省是無南。下提單許，打前一定化國上種只隨更極友。條解法實，地月你主轉增人回……員登買外第我示汽用於、上代衣取表一施下，識世讓，河保服如企不龍球家程麼人樓了！孩的成不訴交。
+                                    看色集葉足如。充主人失形到打地……發的地了，大相形然觀樂什前爸足灣一希好我中斯風品天方知大燈壓麼利約經機……是對市。
+                                    論死目、記死益時那國活兒舞究現色球國現品海大角大可強！有來財已機，我港條見工為可全音子位地地選，那意消策行看為。痛想所有。
+                                    書大業國物作，當許時，狀眼裡情位無金或經知機樣廣但個此樣助沒減了土心心！
+                                </p>
+                            </div>
+                            <div class="divi-wide"></div>
+                            <div class="modal-footer">
+                                <a href="#!" class="secondary-btn modal-closer"><span>取消</span></a>
+                                <a href="#!" class="primary-btn modal-closer"><span>確定</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--jQuery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+    <!-- FontAwesome -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+    <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
+    <!-- wow.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <!-- owlCarousel2 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!-- vue.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.min.js"></script>
+    <!-- custom.js -->
+    <script src="js/custom.js"></script>
+
+    <!-- JQ 掛載點 -->
+    <script>
+        $(document).ready(function() {
+            new WOW().init();
+            scrollSpy();
+            selectCustom();
+            customUpload();
+            modalFunction();
+            switcher();
+            scrollTop();
+        });
+    </script>
+
+<script>
+    new Vue({
+        el: '#app',
+        data: {},
+        methods: {},
+    })
+</script>
+
+</body>
+
+</html>

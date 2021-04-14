@@ -1,0 +1,56 @@
+/*
+----------------
+Font Download
+----------------
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Roboto&display=swap');
+
+/*
+----------------
+UI Kit Presets
+----------------
+*/
+
+$font: 'Noto Sans TC', 'Roboto';
+
+/*
+----------------
+Main Color Set
+----------------
+*/
+
+$black: #000;
+$b60: rgba(0,0,0,.6);
+$gray90: hsl(0, 0%, 10%);
+$gray80: hsl(0, 0%, 20%);
+$gray70: hsl(0, 0%, 30%);
+$gray60: hsl(0, 0%, 40%);
+$gray50: hsl(0, 0%, 50%);
+$gray40: hsl(0, 0%, 60%);
+$gray30: hsl(0, 0%, 70%);
+$gray20: hsl(0, 0%, 80%);
+$gray10: hsl(0, 0%, 90%);
+$gray5: hsl(0, 0%, 95%);
+$white: #fff;
+$trans: rgba(255,255,255,0);
+
+/*
+----------------
+Extend Material
+----------------
+*/
+
+%hidden {
+    overflow: hidden;
+    object-position: center;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+}
+
+/*
+----------------
+----------------
+*/

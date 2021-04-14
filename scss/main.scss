@@ -1,0 +1,40 @@
+@import "kit";
+@import "style";
+@import "rwd";
+
+html, body, * {
+    box-sizing: border-box;
+    font-family: $font;
+    position: relative;
+    cursor: default;
+    line-height: 1.5;
+}
+
+html, body {
+    font-size: 10px;
+}
+
+/*
+------------------
+Custom Scroll Bar
+------------------
+*/
+/* width */
+::-webkit-scrollbar {
+    width: 1rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+background: $gray20;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+background: $gray30;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+background: $gray50;
+}

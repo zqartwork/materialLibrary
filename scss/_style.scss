@@ -1,0 +1,420 @@
+/*
+-----------------
+Useless
+-----------------
+*/
+section {
+    height: 100vh;
+    padding: 5.2rem 0 0 16rem;
+}
+html {
+    color: $gray80;
+}
+body {
+    background-color: $gray10;
+    height: 100%;
+    width: 100%;
+}
+.custom_select,
+.custom_upload,
+.primary-btn,
+.secondary-btn {
+    margin: 0 1rem 0 0;
+}
+
+/*
+-----------------
+Preset
+-----------------
+*/
+
+a, span, img, input {
+    display: inline-flex;
+    text-decoration: none;
+    outline: none;
+    border: 0;
+}
+a {
+    color: $gray80;
+    cursor: pointer;
+
+    *, svg, img, i {
+        cursor: pointer;
+    }
+
+    &:active, &:visited, &:focus {
+        color: inherit
+    }
+    &:hover {
+        color: $gray50;
+    }
+}
+.primary-btn,
+.secondary-btn {
+    padding: 1rem 2rem;
+    background-color: $white;
+    border-radius: 5px;
+}
+
+.secondary-btn {
+    background-color: $trans;
+    border: 1px solid $gray20;
+}
+
+/*
+------------
+Anchor Style
+------------
+*/
+
+.anchor {
+    &:hover, &.active {
+        background-color: $gray5;
+    }
+}
+
+/*
+------------------
+Section Common Set
+------------------
+*/
+
+.inner-wrapper {
+    padding: 2rem;
+}
+.section-title {
+    font-size: 3.2rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+
+/*
+-----------------
+Navbar
+-----------------
+*/
+#navbar {
+    background-color: $white;
+    width: 100%;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    z-index: 100;
+}
+.nav-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo, .nav-item {
+    padding: 2rem 4rem;
+
+    &:hover {
+        background-color: $gray5;
+    }
+}
+/*
+-----------------
+Side Menu
+-----------------
+*/
+.side-menu {
+    display: inline-flex;
+    padding: 0rem;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    padding-top: 5.2rem;
+    background-color: $white;
+    height: 100%;
+    z-index: 99;
+}
+.side-nav-item-wrap {
+    display: inline-flex;
+    flex-direction: column;
+}
+.side-nav-item {
+    padding: 2rem 4rem;
+    &:hover {
+        background-color: $gray5;
+    }
+}
+
+/*
+-------------
+Custom Select
+-------------
+*/
+
+// 字體大小
+.select_container {
+    font-size: 1.4rem;
+}
+
+// 選擇後顯示區的Style
+.custom_select {
+    display: inline-block;
+    background-color: $white;
+    color: $gray80;
+    border-radius: 5px;
+    transition: all 0.2s ease;
+    position: relative;
+    width: auto;
+    text-align: center;
+    padding: 1rem 2rem;
+    outline: none;
+    cursor: pointer;
+    white-space: nowrap;
+
+    //滑鼠Hover後的背景顏色
+    &:hover {
+        background: $gray5;
+    }
+
+    * {
+        cursor: pointer;
+    }
+
+}
+
+//箭頭樣式
+.select_i {
+    color: $gray80;
+    transition: all 0.1s ease-in-out;
+    margin-left: 1rem;
+}
+
+//選擇區啟動
+.custom_select:active {
+    background-color: $gray5;
+}
+
+//選擇區啟動後樣式
+.custom_select.active:hover,
+.custom_select.active {
+    border-radius: 5px 5px 0 0;
+    background-color: $gray5;
+    border: none;
+}
+
+//選擇區啟動後箭頭樣式
+.custom_select.active .select_i {
+    transform: rotate(90deg);
+}
+
+//選擇區選項樣式
+.select_menu {
+    position: absolute;
+    background-color: $white;
+    width: 100%;
+    top: 100%;
+    left: 0;
+    border-radius: 0 0 5px 5px;
+    overflow: hidden;
+    display: none;
+    list-style: none;
+    z-index: 9;
+    padding: 0;
+
+    max-height: 500%;
+    overflow-y: auto;
+}
+
+.select_menu>li {
+    padding: .8rem 2rem;
+    cursor: pointer;
+}
+
+.select_menu>li:hover {
+    background-color: $gray5;
+}
+
+.select_menu>li:active {
+    background-color: $gray5;
+}
+//select custom end
+
+/*
+-------------------------------
+Custom Upload Files 自訂上傳檔案
+-------------------------------
+*/
+
+.input-file-container {
+    position: relative;
+    display: inline-flex;
+    outline: none;
+  } 
+  .js .input-file-trigger {
+    display: inline-flex;
+    padding: 1rem 2rem;
+    background-color: $white;
+    color: $gray80;
+    cursor: pointer;
+    border-radius: 5px;
+    outline: none;
+  }
+  .js .input-file {
+    position: absolute;
+    top: 0; 
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    cursor: pointer;
+  }
+  .js .input-file:hover + .input-file-trigger,
+  .js .input-file:focus + .input-file-trigger,
+  .js .input-file-trigger:hover,
+  .js .input-file-trigger:focus {
+      background-color: $gray5;
+  }
+  
+  .file-return {
+    margin: 0;
+  }
+  .file-return:not(:empty) {
+    margin: 1em 0;
+  }
+  .js .file-return {
+      margin-left: 1rem;
+  }
+  .js .file-return:not(:empty):before {
+    content: "檔案名稱：";
+  }
+
+//Upload Files end
+
+/*
+-----
+Modal
+-----
+*/
+
+.modal {
+    position:fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: 101;
+    background-color: $b60;
+    font-size: 1.4rem;
+
+    display: none;
+}
+.modal-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.modal-mask {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 0;
+    height: 100%;
+    width: 100%;
+}
+.modal-panel {
+    z-index: 1;
+    height: auto;
+    width: calc(100% - 3rem);
+    max-width: 80rem;
+
+    margin: 0 auto;
+    background-color: $gray5;
+    border-radius: 5px;
+
+    padding: 2rem 0;
+}
+.modal-title {
+    font-size: 3.2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+.modal-subtitle {
+    font-size: 1.4rem;
+}
+.modal-header, .modal-body, .modal-footer {
+    padding: 0 2rem;
+}
+.divi-wide {
+    height: 1px;
+    width: 100%;
+    background-color: $gray20;
+    margin: 2rem 0;
+}
+.modal-close-btn {
+    position: absolute;
+    right: 2rem;
+    top: 2rem;
+    z-index: 1;
+    img {
+        cursor: pointer;
+    }
+}
+.modal-footer {
+    text-align: right;
+}
+
+// Modal end
+
+/*
+--------------
+Switch Navtabs
+--------------
+*/
+.switch-nav-tab {
+    background-color: $white;
+    padding: 1rem 2rem;
+    border-radius: 5px 5px 0 0;
+
+    &.active {
+        background-color: $gray5;
+    }
+}
+.switch-nav-content-wrapper {
+    max-width: 100rem;
+    padding: 2rem;
+    background-color: $gray5;
+}
+.switch-nav-content {
+    display: none;
+
+    &.active {
+        display: flex;
+    }
+
+}
+
+/*
+-----------
+Scroll Top
+-----------
+*/
+.scrollTop {
+    position: fixed;
+    z-index: 10;
+    right: 15px;
+    bottom: 15px;
+    background-color: $white;
+    padding: .5rem 1.5rem;
+    opacity: 0;
+    transition: all 0.4s ease-in-out 0s;
+    font-weight: 900;
+    font-size: 2.4rem;
+    color: $gray50;
+    border-radius: 5px;
+
+    cursor: pointer;
+    svg {
+        cursor: pointer;
+    }
+}
